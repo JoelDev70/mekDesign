@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Mek Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="panel inner-panel">
+        <nav class="top-nav">
+          <div class="brand">MEK Designer.</div>
+          <ul class="menu">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT US</a></li>
+            <li><a href="./store.html">STORE</a></li>
+            <li><a href="./contact.html" class="active">CONTACT</a></li>
+          </ul>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+
+        <section class="inner-hero contact-hero">
+          <div class="inner-copy">
+            <p class="eyebrow">Let's work together</p>
+            <h1>
+              Donnez vie à votre prochaine idée de design grâce à un style
+              visuel épuré et affirmé.
+            </h1>
+            <p class="lead">
+              Partagez votre projet, vos objectifs de marque ou votre idée de
+              campagne. Mek Designer est disponible pour des collaborations
+              freelance, la création de marques et de visuels promotionnels.
+            </p>
+          </div>
+        </section>
+
+        <section class="contact-layout">
+          <article class="info-card contact-card">
+            <h2>Coordonnées</h2>
+            <ul class="contact-list">
+              <li>
+                <span>Email</span>
+                <a href="mailto:mekdesigner@email.com">mekdesigner@email.com</a>
+              </li>
+              <li>
+                <span>Telephone </span>
+                <a href="tel:+243000000000">+243 000 000 000</a>
+              </li>
+              <li>
+                <span>Emplacement</span>
+                <p>GOMA, DR Congo</p>
+              </li>
+              <li>
+                <span>Disponibilité</span>
+                <p>
+                  Disponible pour les projets de branding, de design digital et
+                  d'impression
+                </p>
+              </li>
+            </ul>
+          </article>
+
+          <form class="contact-form info-card">
+            <h2>Commencer un projet</h2>
+            <label>
+              Nom et post-nom
+              <input
+                type="text"
+                name="name"
+                id="name"
+                autocomplete="Name"
+                placeholder="Your name"
+                required
+              />
+            </label>
+            <label>
+              Adresse email
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="Email"
+                placeholder="Your email"
+                required
+              />
+            </label>
+            <label>
+              Type de projet
+              <input
+                type="text"
+                name="project"
+                id="project"
+                placeholder="Branding, flyer, social media..."
+                required
+              />
+            </label>
+            <label>
+              Détails du projet
+              <textarea
+                name="message"
+                rows="5"
+                id="message"
+                placeholder="Tell me about your idea"
+                required
+              ></textarea>
+            </label>
+            <button type="submit">Envoyer message</button>
+          </form>
+        </section>
+
+        <footer class="panel-footer inner-footer">
+          <div class="socials" aria-label="Social links">
+            <a href="#" aria-label="Facebook"
+              ><img
+                src="https://cdn.simpleicons.org/Facebook/1877F2"
+                class="icon"
+            /></a>
+            <a href="#" aria-label="Instagram"
+              ><img
+                src="https://cdn.simpleicons.org/instagram/E4405F"
+                class="icon"
+            /></a>
+            <a href="#" aria-label="Twitter"
+              ><img src="https://cdn.simpleicons.org/X/000000" class="icon"
+            /></a>
+            <a href="#" aria-label="Whatsapp"
+              ><img
+                src="https://cdn.simpleicons.org/Whatsapp/g25D366"
+                class="icon"
+            /></a>
+          </div>
+          <p>Prêt pour votre prochain projet créatif.</p>
+        </footer>
+
+        <button class="back-to-top" type="button" aria-label="Retour en haut">
+          ↑
+        </button>
+      </section>
+    </main>
+    <script src="../logic/script.js"></script>
+  </body>
+</html>
