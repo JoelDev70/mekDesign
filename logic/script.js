@@ -12,10 +12,8 @@ if (copyblockP) {
 
   function type() {
     currentPhrase = sentences[sentenceIndex];
-
     if (!isDeleting) {
       copyblockP.textContent = currentPhrase.substring(0, letterIndex++);
-
       if (letterIndex > currentPhrase.length) {
         isDeleting = true;
         setTimeout(type, 1500);
@@ -29,12 +27,15 @@ if (copyblockP) {
         sentenceIndex = (sentenceIndex + 1) % sentences.length;
       }
     }
-
     setTimeout(type, delay);
   }
-
   type();
 }
+const hero = document.querySelector(".hero");
+const heroH5 = document.querySelector(".hero h5")
+hero.addEventListener("mouseover",()=>{
+  heroH5.classList.toggle("visible");  
+});
 
 const navElements = document.querySelectorAll(".top-nav");
 
@@ -70,7 +71,6 @@ navElements.forEach((nav) => {
 const revealTargets = document.querySelectorAll(
   ".inner-hero, .highlight-card, .content-grid > *, .contact-layout > *, .store-featured, .store-gallery > *, .inner-footer"
 );
-
 if (revealTargets.length) {
   const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"

@@ -55,7 +55,7 @@ body {
   border-radius: 34px;
   border: 1px solid rgba(255, 255, 255, 0.28);
 }
-
+ 
 .top-nav {
   display: flex;
   align-items: center;
@@ -141,7 +141,7 @@ body {
 
 .copy-block p {
   font-size: clamp(1.7rem, 2.6vw, 2.35rem);
-  color: #2b3038;
+  color: var(--surface);
   line-height: 1.12;
 }
 
@@ -160,46 +160,61 @@ body {
   left: 300px;
   right: 20px;
   bottom: 0;
-  top: 130px;
+  top: 100px;
   
-}
-
-.circle {
-  position: absolute;
-  width: min(38vw, 560px);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 30% 30%, var(--accent-soft) 0%, var(--accent) 45%, #d45d1f 100%);
-  left: 8%;
-  top: 4%;
-  box-shadow: 0 25px 60px rgba(255, 138, 61, 0.3);
 }
 
 .hero img {
   position: absolute;
-  left: 10%;
+  left: 0;
   border-radius: 50%;
-  bottom:40px;
-  width: min(36vw, 520px);
+  width: min(45vw, 700px);
   height: auto;
   max-height: 97%;
   object-fit: cover;
-  filter: grayscale(1) contrast(1.18);
 }
 
 .hero h2 {
   position: absolute;
-  right: 5%;
-  top: 35%;
+  right: 45%;
+  top: 65%;
   font-family: Sora, sans-serif;
-  font-size: clamp(3.8rem, 8vw, 9.8rem);
+  font-size: clamp(2rem, 3vw, 4rem);
   line-height: 0.88;
+  font-weight: 500px;; 
+  text-align: center;
   letter-spacing: -0.03em;
-  font-weight: 800;
   color: var(--deep);
   text-shadow: 0 10px 22px rgba(255, 255, 255, 0.2);
 }
+.hero h2 span {
+      color: var(--accent);
+  font-size: clamp(4rem, 4vw, 3rem);
+  }
+ .hero h5{
+  margin-left: -500px; 
+}
+.visible{
+    position: absolute;
+    right: 38%;
+    top: 45%;
+    font-family: Sora, sans-serif;
+    font-size: clamp(1rem, 1vw, 3rem);
+    line-height: 0.88;
+    border-radius: 20px;
+    padding: 7px;
+    background-color: #365b7b;
+    border: 0.05px solid rgb(143, 142, 142);
+    font-weight: 200; 
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: var(--accent);
+    text-shadow: 0 10px 22px rgba(255, 255, 255, 0.2);
+}
+.hero h5 span {
+  font-weight:bold; 
+ }
+ 
 
 .panel-footer {
   position: absolute;
@@ -232,7 +247,7 @@ body {
 }
 
 .socials a:hover {
-  background: var(--accent);
+  background: var(--ink);
   transform: translateY(-2px);
 }
 .socials img {
@@ -687,18 +702,11 @@ body {
     min-height: 520px;
   }
 
-  .circle {
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(80vw, 480px);
-
-  }
-
   .hero img {
-    left: 50%;
+    left: 65%;
     transform: translateX(-58%);
-    width: min(58vw, 430px);
-    bottom: 35%;
+    width: min(120vw, 700px);
+    bottom: 5%;
   }
 
   .hero h2 {
