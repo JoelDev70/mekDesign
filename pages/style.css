@@ -623,10 +623,10 @@ body {
   visibility: hidden;
   transform: translateY(18px) scale(0.92);
   transition:
-    opacity 0.3s ease,
-    transform 0.3s ease,
-    visibility 0.3s ease,
-    box-shadow 0.3s ease;
+  opacity 0.3s ease,
+  transform 0.3s ease,
+  visibility 0.3s ease,
+  box-shadow 0.3s ease;
   z-index: 1000;
 }
 

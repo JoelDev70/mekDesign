@@ -9,7 +9,6 @@ if (copyblockP) {
   let isDeleting = false;
   let currentPhrase = "";
   const delay = 100;
-
   function type() {
     currentPhrase = sentences[sentenceIndex];
     if (!isDeleting) {
@@ -31,14 +30,8 @@ if (copyblockP) {
   }
   type();
 }
-const hero = document.querySelector(".hero");
-const heroH5 = document.querySelector(".hero h5")
-hero.addEventListener("mouseover",()=>{
-  heroH5.classList.toggle("visible");  
-});
 
 const navElements = document.querySelectorAll(".top-nav");
-
 navElements.forEach((nav) => {
   const toggleButton = nav.querySelector(".menu-toggle");
   const menu = nav.querySelector(".menu");
@@ -151,4 +144,12 @@ if (backToTopButton) {
       behavior: "smooth",
     });
   });
+}
+const hero = document.querySelector(".hero");
+const heroH5 = document.querySelector(".hero h5");
+if (hero && heroH5) {
+    hero.addEventListener("mouseenter", () => {
+        heroH5.classList.toggle("visible");
+        console.log("Effet activé sur le profil !");
+    });
 }
